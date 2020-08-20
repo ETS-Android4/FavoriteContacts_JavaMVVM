@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">KinAndCartaChallenge</string>
+    <string name="title_contacts">Contacts</string>
+    <string name="favorite_star_emoji_code">&#11088;</string>
+    <string name="section_favorite_contacts">favorite contacts</string>
+    <string name="section_other_contacts">other contacts</string>
+
+    <string name="title_phone">PHONE:</string>
+    <string name="title_address">ADDRESS:</string>
+    <string name="title_birthdate">BIRTHDATE:</string>
+    <string name="title_email">EMAIL:</string>
+
+    <string name="home_phone_type">Home</string>
+    <string name="mobile_phone_type">Mobile</string>
+    <string name="work_phone_type">Work</string>
+
+
 </resources>

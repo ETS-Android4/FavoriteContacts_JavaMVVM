@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_contacts">
+
+    <fragment
+        android:id="@+id/nav_contacts"
+        android:name="com.example.kinandcartachallenge.ui.ContactsFragment"
+        android:label="@string/title_contacts"
+        tools:layout="@layout/fragment_contacts">
+        <action
+            android:id="@+id/action_contacts_to_details"
+            app:destination="@id/nav_contact_details">
+
+            <argument
+                android:name="selectedContact"
+                app:argType="com.example.kinandcartachallenge.data.model.Contact" />
+
+        </action>
+        <action
+            android:id="@+id/action_nav_contacts_to_nav_contact_details"
+            app:destination="@id/nav_contact_details" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_contact_details"
+        android:name="com.example.kinandcartachallenge.ui.ContactDetailsFragment"
+        tools:layout="@layout/fragment_contact_details">
+
+        <argument
+            android:name="selectedContact"
+            app:argType="com.example.kinandcartachallenge.data.model.Contact" />
+
+        <action
+            android:id="@+id/action_nav_contact_details_to_nav_contacts"
+            app:destination="@id/nav_contacts" />
+    </fragment>
+
+
+</navigation>

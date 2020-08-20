@@ -1,6 +1,8 @@
 package com.example.kinandcartachallenge.data.model;
 
-public class Contact {
+import java.io.Serializable;
+
+public class Contact implements Serializable {
     private String name;
     private String id;
     private String companyName;
