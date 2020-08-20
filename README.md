@@ -16,3 +16,5 @@ MVVM application architecture
 Installation method:
 
 Open the project with Android Studio or install the application on your Android device with ADB (adb install kinandAndCartaChallenge.apk)
+
+![contact_detail](/screenshots/contact_detail.png?raw=true "Second screen")
